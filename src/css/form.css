@@ -1,0 +1,71 @@
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.form input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 250ms ease;
+}
+
+.form input:hover {
+  border-color: #000;
+}
+
+.form input:focus {
+  border-color: #4e75ff;
+}
+
+.form button {
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
+}
+
+/*  СТИЛІ ЛОАДЕРА  */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #4e75ff;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto 32px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
