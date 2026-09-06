@@ -5,7 +5,7 @@ import { createGallery, clearGallery, showLoader, hideLoader } from './js/render
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const searchForm = document.querySelector('.form');
+const searchForm = document.querySelector('form');
 
 searchForm.addEventListener('submit', event => {
   event.preventDefault(); 
